@@ -1,4 +1,4 @@
-namespace LearnMEF
+namespace LearnMEF.Loggers
 {
     public interface ILogger
     {

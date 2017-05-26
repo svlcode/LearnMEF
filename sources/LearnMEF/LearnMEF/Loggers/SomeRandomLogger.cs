@@ -1,9 +1,10 @@
 using System;
 using System.ComponentModel.Composition;
 
-namespace LearnMEF
+namespace LearnMEF.Loggers
 {
     [Export(typeof(ILogger))]
+    [Export("random", typeof(ILogger))]
     internal class SomeRandomLogger : ILogger
     {
         public SomeRandomLogger()

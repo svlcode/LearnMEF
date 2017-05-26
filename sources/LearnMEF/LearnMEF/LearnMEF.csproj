@@ -43,13 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hosts\IHost.cs" />
+    <Compile Include="Hosts\ImportSpecificType.cs" />
     <Compile Include="Loggers\DebuggLogger.cs" />
-    <Compile Include="HostMefInAnApplication.cs" />
-    <Compile Include="ILogger.cs" />
+    <Compile Include="Hosts\SingleImport.cs" />
+    <Compile Include="Loggers\ILogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Loggers\SomeRandomLogger.cs" />
-    <Compile Include="UsingAnAssemblyCatalog.cs" />
+    <Compile Include="Hosts\ImportMany.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
