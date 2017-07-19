@@ -13,21 +13,11 @@ namespace LearnMEF.Hosts
         {
             
         }
-
-        private ILogger _logger;
-
-        //[Import]
-        public ILogger Logger 
-        {
-            get { return _logger; }
-            set { _logger = value; }
-        } 
-
+        
         public void Run()
         {
-            //Compose();
-
-            Logger.Write("This is a message.");
+            var logger = IoC.Instance.GetInstance<ILogger>("debug");
+            logger.Write("This is a message.");
         }
     }
 }
